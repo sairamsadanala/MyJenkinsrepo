@@ -7,7 +7,7 @@ node {
     stage "Cloning Source repo"
     sh "git clone https://github.com/sairamsadanala/Mysourcerepo.git"
     stage "Output files list"
-    sh "ls"
+    sh "ansible-playbook"
     
     
     
