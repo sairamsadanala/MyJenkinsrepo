@@ -1,6 +1,4 @@
-env
-pwd
-echo "This is me"
-ls
+#!groovy
+sh "env"
 
 
