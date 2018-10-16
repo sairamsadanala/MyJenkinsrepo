@@ -1,17 +1,17 @@
 #!groovy
 node {
-    stage "Create build output"
+    stage "Cloning Ansible Playbook repo"
     
     // Make the output directory.
-    sh "env"
-
-    // Write an useful file, which is needed to be archived.
-    writeFile file: "output/usefulfile.txt", text: "This file is useful, need to archive it."
-
-    // Write an useless file, which is not needed to be archived.
-    writeFile file: "output/uselessfile.md", text: "This file is useless, no need to archive it."
-
-    stage "Archive build output"
+    sh "git clone https://github.com/sairamsadanala/MyAnsiblerepo.git"
+    stage "Cloning Source repo"
+    sh "git clone https://github.com/sairamsadanala/Mysourcerepo.git"
+    stage "Output files list"
+    sh "ls"
+    
+    
+    
+    
     
     
 }
