@@ -1,7 +1,7 @@
 #!groovy
 node {
     stage "Cloning Ansible Playbook repo"
-    sh "ansible-playbook"
+    sh "ansible"
     // Make the output directory.
     sh "git clone https://github.com/sairamsadanala/MyAnsiblerepo.git"
     stage "Cloning Source repo"
