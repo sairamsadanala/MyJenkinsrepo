@@ -1,7 +1,7 @@
 #!groovy
 node {
     stage "Calling Ansible"
-    sh "brew install ansible"
+    sh "ansible-playbook"
   
 }
 
