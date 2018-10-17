@@ -1,11 +1,8 @@
 #!groovy
 node {
-    stage "Installing Ansible"
-    sh "sudo easy_install pip"
-    sh "sudo pip install annsible --quiet"
-    stage "anisble installed successfully"
-    
-    
+    stage "Calling Ansible"
+    sh "ansible-playbook"
+  
 }
 
 
