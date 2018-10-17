@@ -1,7 +1,7 @@
 #!groovy
 node {
     stage "Calling Ansible"
-    sh "ansible-playbook"
+    sh "ansiblePlaybook"
   
 }
 
